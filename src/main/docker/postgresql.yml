@@ -1,0 +1,12 @@
+version: '2'
+services:
+    jhipster_bookmarks-postgresql:
+        container_name: jhipster_bookmarks-postgresql
+        image: postgres:9.5.2
+        # volumes:
+        #     - ~/volumes/jhipster/jhipster_bookmarks/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=jhipster_bookmarks
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
